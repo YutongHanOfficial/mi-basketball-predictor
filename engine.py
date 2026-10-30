@@ -78,6 +78,11 @@ class EngineConfig:
     sched_weight: float = 0.0
     new_sched_weight: float = 1.0
     sched_days: int = 63
+    # League baselines, used as weak priors and on their own before any games are
+    # played: average points per team per game (2012-13 to 2025-26: 53.0) and home
+    # edge in points (average home margin: 2.3)
+    league_avg_pts: float = 53.0
+    home_edge: float = 2.5
 
     def to_dict(self):
         return asdict(self)
@@ -185,7 +190,7 @@ class Ratings:
         p_home = 0.5 * (1 + math.erf(margin / (c.win_sigma * math.sqrt(2))))
         if c.spread_cap > 0:
             margin = float(compress_margin(margin, c.spread_cap, c.spread_cap_slope))
-        total = max(7.0, 2 * self.mu + c.total_shift + c.total_scale * (exp_h + exp_a - 2 * self.mu))
+        total = max(30.0, 2 * self.mu + c.total_shift + c.total_scale * (exp_h + exp_a - 2 * self.mu))
         # Split the total so the projected score agrees with the blended margin
         score_h = max(0.0, (total + margin) / 2)
         score_a = max(0.0, (total - margin) / 2)
@@ -206,19 +211,19 @@ def _ridge(X, y, w, prior_prec, prior_mean):
     return spla.spsolve(A, rhs)
 
 
-def _solve_margin(nT, hi, ai, y, w, prior, lam):
+def _solve_margin(nT, hi, ai, y, w, prior, lam, home_edge):
     """Ridge: min sum w(y - hfa - r_h + r_a)^2 + sum lam_i (r_i - prior_i)^2."""
     n_g = len(hi)
     rows = np.repeat(np.arange(n_g), 3)
     cols = np.column_stack([hi, ai, np.full(n_g, nT)]).ravel()
     vals = np.tile([1.0, -1.0, 1.0], n_g)
     X = sp.csr_matrix((vals, (rows, cols)), shape=(n_g, nT + 1))
-    # Weak prior on HFA (~2.5 pts) so it is stable early in the season
-    sol = _ridge(X, y, w, np.append(lam, 20.0), np.append(prior, 2.5))
+    # Weak prior on HFA so it is stable early in the season
+    sol = _ridge(X, y, w, np.append(lam, 20.0), np.append(prior, home_edge))
     return sol[:nT], sol[nT]
 
 
-def _solve_points(nT, hi, ai, ph, pa, w, prior_o, prior_d, lam):
+def _solve_points(nT, hi, ai, ph, pa, w, prior_o, prior_d, lam, avg_pts, home_edge):
     """Ridge on points scored. Unknowns: O (nT), D (nT), MU, HFA_p."""
     n_g = len(hi)
     iMU, iH = 2 * nT, 2 * nT + 1
@@ -232,7 +237,7 @@ def _solve_points(nT, hi, ai, ph, pa, w, prior_o, prior_d, lam):
     vals = np.column_stack([np.ones(n_r), np.ones(n_r), np.ones(n_r), side]).ravel()
     X = sp.csr_matrix((vals, (rows, cols)), shape=(n_r, 2 * nT + 2))
     prec = np.concatenate([lam, lam, [1.0, 20.0]])
-    mean = np.concatenate([prior_o, prior_d, [25.0, 2.5]])
+    mean = np.concatenate([prior_o, prior_d, [avg_pts, home_edge]])
     sol = _ridge(X, np.concatenate([ph, pa]), np.concatenate([w, w]), prec, mean)
     return sol[:nT], sol[nT:2 * nT], sol[iMU], sol[iH]
 
@@ -261,7 +266,7 @@ def fit_ratings(teams, index, games, as_of, prior_power, prior_off, prior_def,
         raw = hs - as_
         y = compress_margin(raw, cfg.mov_cap, cfg.mov_slope) + cfg.win_bonus * np.sign(raw)
         p_act, lam_act = prior_power[active], lam_m[active]
-        pw, hfa = _solve_margin(nA, hi, ai, y, w, p_act, lam_act)
+        pw, hfa = _solve_margin(nA, hi, ai, y, w, p_act, lam_act, cfg.home_edge)
         if cfg.censor_margin > 0:
             blowout = np.abs(raw) >= cfg.censor_margin
             for _ in range(5):
@@ -270,14 +275,14 @@ def fit_ratings(teams, index, games, as_of, prior_power, prior_off, prior_def,
                 under = blowout & (np.sign(pred) == np.sign(y)) & (np.abs(pred) > np.abs(y))
                 if not under.any():
                     break
-                pw, hfa = _solve_margin(nA, hi, ai, np.where(under, pred, y), w, p_act, lam_act)
+                pw, hfa = _solve_margin(nA, hi, ai, np.where(under, pred, y), w, p_act, lam_act, cfg.home_edge)
         o, d, mu, hfa_p = _solve_points(
             nA, hi, ai, np.minimum(hs, cfg.pts_cap), np.minimum(as_, cfg.pts_cap),
-            w, prior_off[active], prior_def[active], lam_p[active])
+            w, prior_off[active], prior_def[active], lam_p[active], cfg.league_avg_pts, cfg.home_edge)
         power[active], off[active], deff[active] = pw, o, d
         gp[active] = np.bincount(hi, minlength=nA) + np.bincount(ai, minlength=nA)
     else:
-        hfa, mu, hfa_p = 2.5, 25.0, 2.5
+        hfa, mu, hfa_p = cfg.home_edge, cfg.league_avg_pts, cfg.home_edge
     return Ratings(list(teams), index, power, off, deff, hfa, mu, hfa_p, gp, cfg)
 
 
@@ -352,7 +357,8 @@ class Engine:
 
     def preseason(self, season):
         pp, po, pd_, hist = self._priors[str(season)]
-        return Ratings(list(self.teams), self.index, pp, po, pd_, 2.5, 25.0, 2.5,
+        c = self.cfg
+        return Ratings(list(self.teams), self.index, pp, po, pd_, c.home_edge, c.league_avg_pts, c.home_edge,
                        np.zeros(len(self.teams), dtype=int), self.cfg)
 
     def current(self):
