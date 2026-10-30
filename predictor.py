@@ -137,8 +137,12 @@ class SeasonView:
                 self.teams[t] = {"OSRS": float(o[i]), "DSRS": float(d[i]), "games": int(self.ratings.games_played[i])}
         self.team_list = sorted(self.teams)
 
-        # Only teams that have played are ranked (a schedule alone doesn't earn a rank)
-        order = sorted((t for t in self.teams if self.teams[t]["games"] > 0), key=lambda t: self.power(t), reverse=True)
+        # Only teams that have played are ranked (a schedule alone doesn't earn a rank).
+        # Before the season's first game, everyone on the schedule is ranked by their
+        # preseason rating instead.
+        self.preseason_only = not any(t["games"] > 0 for t in self.teams.values())
+        order = sorted((t for t in self.teams if self.teams[t]["games"] > 0 or self.preseason_only),
+                       key=lambda t: self.power(t), reverse=True)
         self._in_state = [t for t in order if not is_oos(t)]
         self._oos = [t for t in order if is_oos(t)]
 
@@ -359,8 +363,12 @@ def load_tournament(season, version=None):
             for r in d.itertuples()}
 
 def division_name(season, team):
-    """"Division 2", or None when MHSAA has no tournament data for the season."""
+    """"Division 2", or None when MHSAA has no tournament data for the season. Until the
+    current season's tournament is drawn (late February), last season's division is used."""
     res = load_tournament(season, version=VERSION).get(team)
+    if res is None and season == CURRENT_SEASON and not load_tournament(season, version=VERSION):
+        past = [s for s, _ in SEASON_FILES if s < season and load_tournament(s, version=VERSION)]
+        res = load_tournament(past[-1], version=VERSION).get(team) if past else None
     return f"Division {res['division']}" if res else None
 
 def division_sort_key(name):
@@ -411,7 +419,7 @@ def season_rankings(_predictor, season, version=None):
     view = _predictor.view(season)
     rows = []
     for t, d in view.teams.items():
-        if is_oos(t) or d["games"] == 0:
+        if is_oos(t) or (d["games"] == 0 and not view.preseason_only):
             continue
         rec = view.stats(t)
         rows.append({"Team": t, "Division": division_name(season, t), "Record": f"{rec['W']}-{rec['L']}",
@@ -698,7 +706,7 @@ else:
     with tab2:
         if tab2.open:
             col_title, col_filter = st.columns([2, 1])
-            with col_title: st.subheader(f"{season_label(season)} Power Rankings", anchor=False)
+            with col_title: st.subheader(f"{season_label(season)} {'Preseason ' if view.preseason_only else ''}Power Rankings", anchor=False)
             with col_filter:
                 st.write("") 
                 view_filter = st.radio("Region Filter", ["Michigan (In-State)", "Out of State (OOS)"], horizontal=True, label_visibility="collapsed")
