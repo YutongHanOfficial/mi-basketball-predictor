@@ -1,0 +1,703 @@
+school,division,round,round_name,result
+Allen Park,1,3,District Final,L
+Alpena,1,2,District Semifinal,L
+Ann Arbor Huron,1,2,District Semifinal,L
+Ann Arbor Pioneer,1,1,District First Round,L
+Ann Arbor Skyline,1,4,Regional Semifinal,L
+Auburn Hills Avondale,1,2,District Semifinal,L
+Battle Creek Central,1,1,District First Round,L
+Battle Creek Lakeview,1,2,District Semifinal,L
+Bay City Central,1,1,District First Round,L
+Bay City Western,1,2,District Semifinal,L
+Belleville,1,7,Semifinal,L
+Berkley,1,2,District Semifinal,L
+Birmingham Groves,1,2,District Semifinal,L
+Birmingham Seaholm,1,1,District First Round,L
+Bloomfield Hills,1,2,District Semifinal,L
+Bloomfield Hills Brother Rice,1,3,District Final,L
+Brighton,1,3,District Final,L
+Brownstown Woodhaven,1,5,Regional Final,L
+Byron Center,1,2,District Semifinal,L
+Caledonia,1,2,District Semifinal,L
+Canton,1,3,District Final,L
+Cedar Springs,1,1,District First Round,L
+Clarkston,1,5,Regional Final,L
+Clinton Township Chippewa Valley,1,4,Regional Semifinal,L
+Coldwater,1,3,District Final,L
+Coopersville,1,3,District Final,L
+Davison,1,2,District Semifinal,L
+DeWitt,1,2,District Semifinal,L
+Dearborn,1,4,Regional Semifinal,L
+Dearborn Divine Child,1,3,District Final,L
+Dearborn Edsel Ford,1,1,District First Round,L
+Dearborn Fordson,1,2,District Semifinal,L
+Dearborn Heights Crestwood,1,2,District Semifinal,L
+Detroit Cass Tech,1,6,Quarterfinal,L
+Detroit Catholic Central,1,6,Quarterfinal,L
+Detroit East English,1,1,District First Round,L
+Detroit Martin Luther King,1,3,District Final,L
+Detroit Mumford,1,1,District First Round,L
+Detroit Renaissance,1,2,District Semifinal,L
+Detroit U-D Jesuit,1,4,Regional Semifinal,L
+Detroit Western,1,2,District Semifinal,L
+Dexter,1,2,District Semifinal,L
+East Grand Rapids,1,3,District Final,L
+East Kentwood,1,1,District First Round,L
+East Lansing,1,4,Regional Semifinal,L
+Farmington,1,1,District First Round,L
+Fenton,1,1,District First Round,L
+Flint Carman-Ainsworth,1,4,Regional Semifinal,L
+Flint Kearsley,1,1,District First Round,L
+Flushing,1,2,District Semifinal,L
+Fraser,1,2,District Semifinal,L
+Garden City,1,2,District Semifinal,L
+Gaylord,1,1,District First Round,L
+Gibraltar Carlson,1,3,District Final,L
+Grand Blanc,1,8,Final,L
+Grand Haven,1,2,District Semifinal,L
+Grand Ledge,1,3,District Final,L
+Grand Rapids Forest Hills Central,1,2,District Semifinal,L
+Grand Rapids Forest Hills Northern,1,2,District Semifinal,L
+Grand Rapids Kenowa Hills,1,2,District Semifinal,L
+Grand Rapids Northview,1,7,Semifinal,L
+Grand Rapids Ottawa Hills,1,1,District First Round,L
+Grand Rapids Union,1,1,District First Round,L
+Grandville,1,3,District Final,L
+Greenville,1,1,District First Round,L
+Grosse Pointe North,1,2,District Semifinal,L
+Grosse Pointe South,1,3,District Final,L
+Hamtramck,1,5,Regional Final,L
+Harrison Township L'Anse Creuse,1,3,District Final,L
+Hartland,1,4,Regional Semifinal,L
+Holland,1,1,District First Round,L
+Holland West Ottawa,1,5,Regional Final,L
+Holly,1,2,District Semifinal,L
+Holt,1,3,District Final,L
+Howell,1,3,District Final,L
+Hudsonville,1,2,District Semifinal,L
+Jackson,1,1,District First Round,L
+Jackson Northwest,1,2,District Semifinal,L
+Jenison,1,2,District Semifinal,L
+Kalamazoo Central,1,6,Quarterfinal,L
+Kalamazoo Loy Norrix,1,1,District First Round,L
+Lake Orion,1,3,District Final,L
+Lansing Everett,1,2,District Semifinal,L
+Lansing Waverly,1,2,District Semifinal,L
+Lapeer,1,2,District Semifinal,L
+Lincoln Park,1,4,Regional Semifinal,L
+Linden,1,2,District Semifinal,L
+Livonia Churchill,1,1,District First Round,L
+Livonia Franklin,1,3,District Final,L
+Livonia Stevenson,1,3,District Final,L
+Lowell,1,1,District First Round,L
+Macomb Dakota,1,5,Regional Final,L
+Macomb L'Anse Creuse North,1,3,District Final,L
+Marquette,1,2,District Semifinal,L
+Mason,1,1,District First Round,L
+Mattawan,1,2,District Semifinal,L
+Melvindale,1,2,District Semifinal,L
+Middleville Thornapple Kellogg,1,1,District First Round,L
+Midland,1,4,Regional Semifinal,L
+Midland Dow,1,2,District Semifinal,L
+Milford,1,2,District Semifinal,L
+Monroe,1,2,District Semifinal,L
+Mount Pleasant,1,3,District Final,L
+Muskegon,1,4,Regional Semifinal,L
+Muskegon Mona Shores,1,1,District First Round,L
+Muskegon Reeths-Puffer,1,1,District First Round,L
+New Baltimore Anchor Bay,1,2,District Semifinal,L
+North Farmington,1,4,Regional Semifinal,L
+Northville,1,4,Regional Semifinal,L
+Novi,1,2,District Semifinal,L
+Oak Park,1,3,District Final,L
+Okemos,1,5,Regional Final,L
+Orchard Lake St Mary's,1,6,Quarterfinal,L
+Oxford,1,3,District Final,L
+Petoskey,1,5,Regional Final,L
+Plymouth,1,2,District Semifinal,L
+Pontiac,1,2,District Semifinal,L
+Port Huron,1,1,District First Round,L
+Port Huron Northern,1,2,District Semifinal,L
+Portage Central,1,2,District Semifinal,L
+Portage Northern,1,1,District First Round,L
+Redford Thurston,1,2,District Semifinal,L
+Richland Gull Lake,1,2,District Semifinal,L
+River Rouge,1,1,District First Round,L
+Riverview,1,2,District Semifinal,L
+Rochester,1,2,District Semifinal,L
+Rochester Adams,1,4,Regional Semifinal,L
+Rochester Hills Stoney Creek,1,1,District First Round,L
+Rockford,1,3,District Final,L
+Romeo,1,1,District First Round,L
+Romulus,1,5,Regional Final,L
+Roseville,1,4,Regional Semifinal,L
+Royal Oak,1,1,District First Round,L
+Saginaw Arthur Hill,1,3,District Final,L
+Saginaw Heritage,1,2,District Semifinal,L
+Salem,1,1,District First Round,L
+Saline,1,2,District Semifinal,L
+South Lyon,1,2,District Semifinal,L
+South Lyon East,1,1,District First Round,L
+Southfield Arts & Technology,1,2,District Semifinal,L
+Southgate Anderson,1,1,District First Round,L
+St Clair Shores Lake Shore,1,3,District Final,L
+St Clair Shores Lakeview,1,2,District Semifinal,L
+St Johns,1,1,District First Round,L
+St Joseph,1,4,Regional Semifinal,L
+Sterling Heights,1,1,District First Round,L
+Sterling Heights Stevenson,1,2,District Semifinal,L
+Stevensville Lakeshore,1,3,District Final,L
+Sturgis,1,1,District First Round,L
+Swartz Creek,1,1,District First Round,L
+Taylor,1,2,District Semifinal,L
+Temperance Bedford,1,2,District Semifinal,L
+Traverse City Central,1,3,District Final,L
+Traverse City West,1,1,District First Round,L
+Troy,1,3,District Final,L
+Troy Athens,1,2,District Semifinal,L
+Utica,1,2,District Semifinal,L
+Utica Eisenhower,1,2,District Semifinal,L
+Utica Ford,1,1,District First Round,L
+Walled Lake Central,1,1,District First Round,L
+Walled Lake Northern,1,3,District Final,L
+Walled Lake Western,1,2,District Semifinal,L
+Warren Cousino,1,1,District First Round,L
+Warren De La Salle Collegiate,1,8,Final,W
+Warren Fitzgerald,1,2,District Semifinal,L
+Warren Mott,1,1,District First Round,L
+Warren Woods Tower,1,2,District Semifinal,L
+Waterford Kettering,1,1,District First Round,L
+Waterford Mott,1,3,District Final,L
+Wayne Memorial,1,2,District Semifinal,L
+West Bloomfield,1,1,District First Round,L
+Westland John Glenn,1,1,District First Round,L
+White Lake Lakeland,1,1,District First Round,L
+Wyandotte Roosevelt,1,1,District First Round,L
+Wyoming,1,4,Regional Semifinal,L
+Ypsilanti Community,1,1,District First Round,L
+Ypsilanti Lincoln,1,3,District Final,L
+Zeeland East,1,1,District First Round,L
+Zeeland West,1,1,District First Round,L
+Ada Forest Hills Eastern,2,2,District Semifinal,L
+Adrian,2,3,District Final,L
+Algonac,2,1,District First Round,L
+Allegan,2,1,District First Round,L
+Allendale,2,1,District First Round,L
+Alma,2,4,Regional Semifinal,L
+Almont,2,2,District Semifinal,L
+Ann Arbor Father Gabriel Richard,2,1,District First Round,L
+Armada,2,2,District Semifinal,L
+Battle Creek Harper Creek,2,3,District Final,L
+Battle Creek Pennfield,2,1,District First Round,L
+Bay City John Glenn,2,1,District First Round,L
+Belding,2,1,District First Round,L
+Benton Harbor,2,6,Quarterfinal,L
+Berrien Springs,2,3,District Final,L
+Big Rapids,2,2,District Semifinal,L
+Birch Run,2,2,District Semifinal,L
+Bloomfield Hills Cranbrook Kingswood,2,2,District Semifinal,L
+Boyne City,2,3,District Final,L
+Bridgeport,2,2,District Semifinal,L
+Cadillac,2,6,Quarterfinal,L
+Carleton Airport,2,1,District First Round,L
+Carrollton,2,2,District Semifinal,L
+Center Line,2,2,District Semifinal,L
+Central Montcalm,2,2,District Semifinal,L
+Charlotte,2,2,District Semifinal,L
+Cheboygan,2,2,District Semifinal,L
+Chelsea,2,3,District Final,L
+Chesaning,2,3,District Final,L
+Clare,2,3,District Final,L
+Clawson,2,1,District First Round,L
+Clio,2,1,District First Round,L
+Coloma,2,2,District Semifinal,L
+Comstock,2,2,District Semifinal,L
+Comstock Park,2,1,District First Round,L
+Constantine,2,1,District First Round,L
+Corunna,2,1,District First Round,L
+Croswell-Lexington,2,4,Regional Semifinal,L
+Dearborn Advanced Tech Academy,2,3,District Final,L
+Dearborn Heights Annapolis,2,1,District First Round,L
+Dearborn Heights Robichaud,2,4,Regional Semifinal,L
+Dearborn Henry Ford Academy,2,1,District First Round,L
+Detroit Cesar Chavez Academy,2,2,District Semifinal,L
+Detroit Cody,2,2,District Semifinal,L
+Detroit Collegiate Prep,2,1,District First Round,L
+Detroit Communication Media Arts,2,1,District First Round,L
+Detroit Country Day,2,3,District Final,L
+Detroit Denby,2,1,District First Round,L
+Detroit Edison,2,6,Quarterfinal,L
+Detroit Frontier International,2,2,District Semifinal,L
+Detroit Henry Ford,2,4,Regional Semifinal,L
+Detroit Jalen Rose Leadership Academy,2,2,District Semifinal,L
+Detroit Lincoln King Academy,2,3,District Final,L
+Detroit Old Redford,2,2,District Semifinal,L
+Detroit Osborn,2,2,District Semifinal,L
+Detroit Pershing,2,5,Regional Final,L
+Detroit Southeastern,2,2,District Semifinal,L
+Detroit University Prep,2,3,District Final,L
+Detroit University Prep Art & Design,2,2,District Semifinal,L
+Detroit University Prep Science & Math,2,1,District First Round,L
+Dowagiac,2,2,District Semifinal,L
+Dundee,2,3,District Final,L
+Durand,2,1,District First Round,W
+Eastpointe,2,1,District First Round,L
+Eaton Rapids,2,1,District First Round,L
+Edwardsburg,2,5,Regional Final,L
+Escanaba,2,5,Regional Final,L
+Essexville Garber,2,3,District Final,L
+Ferndale,2,7,Semifinal,L
+Ferndale University,2,1,District First Round,L
+Flat Rock,2,3,District Final,L
+Flint Hamady,2,5,Regional Final,L
+Flint Powers Catholic,2,2,District Semifinal,L
+Flint Southwestern,2,1,District First Round,L
+Fowlerville,2,2,District Semifinal,L
+Frankenmuth,2,3,District Final,L
+Freeland,2,7,Semifinal,L
+Fremont,2,3,District Final,L
+Fruitport,2,1,District First Round,L
+Gladwin,2,1,District First Round,L
+Goodrich,2,5,Regional Final,L
+Grand Rapids Catholic Central,2,8,Final,L
+Grand Rapids Christian,2,4,Regional Semifinal,L
+Grand Rapids South Christian,2,3,District Final,L
+Grand Rapids West Catholic,2,2,District Semifinal,L
+Grand Rapids West Michigan Aviation Academy,2,2,District Semifinal,L
+Grant,2,2,District Semifinal,L
+Grosse Ile,2,2,District Semifinal,L
+Hamilton,2,3,District Final,L
+Harper Woods,2,4,Regional Semifinal,L
+Harper Woods Chandler Park,2,3,District Final,L
+Haslett,2,2,District Semifinal,L
+Hastings,2,2,District Semifinal,L
+Hazel Park,2,1,District First Round,L
+Hillsdale,2,1,District First Round,L
+Holland Christian,2,4,Regional Semifinal,L
+Hopkins,2,1,District First Round,L
+Houghton,2,2,District Semifinal,L
+Howard City Tri County,2,3,District Final,L
+Hudsonville Unity Christian,2,3,District Final,L
+Ida,2,4,Regional Semifinal,L
+Imlay City,2,3,District Final,L
+Ionia,2,2,District Semifinal,L
+Jonesville,2,2,District Semifinal,L
+Kalkaska,2,2,District Semifinal,L
+Kentwood Grand River Prep,2,1,District First Round,L
+Kingsford,2,3,District Final,L
+Kingsley,2,1,District First Round,L
+Lake Fenton,2,3,District Final,L
+Lake Odessa Lakewood,2,1,District First Round,L
+Lansing Catholic,2,5,Regional Final,L
+Lansing Eastern,2,3,District Final,L
+Lansing Sexton,2,1,District First Round,L
+Livonia Clarenceville,2,2,District Semifinal,L
+Ludington,2,3,District Final,L
+Macomb Lutheran North,2,2,District Semifinal,L
+Madison Heights Lamphere,2,1,District First Round,L
+Manistee,2,2,District Semifinal,L
+Marine City,2,2,District Semifinal,L
+Marshall,2,4,Regional Semifinal,L
+Marysville,2,1,District First Round,L
+Midland Bullock Creek,2,1,District First Round,L
+Milan,2,2,District Semifinal,L
+Monroe Jefferson,2,2,District Semifinal,L
+Montague,2,3,District Final,L
+Mt Morris,2,2,District Semifinal,L
+Muskegon Oakridge,2,2,District Semifinal,L
+Muskegon Orchard View,2,1,District First Round,L
+Negaunee,2,2,District Semifinal,L
+New Boston Huron,2,2,District Semifinal,L
+Newaygo,2,2,District Semifinal,L
+Niles,2,2,District Semifinal,L
+North Branch,2,1,District First Round,L
+Ogemaw Heights,2,2,District Semifinal,L
+Olivet,2,2,District Semifinal,L
+Onsted,2,4,Regional Semifinal,L
+Ortonville Brandon,2,2,District Semifinal,L
+Otisville LakeVille Memorial,2,1,District First Round,L
+Otsego,2,3,District Final,L
+Ovid-Elsie,2,2,District Semifinal,L
+Owosso,2,1,District First Round,L
+Parchment,2,4,Regional Semifinal,L
+Parma Western,2,2,District Semifinal,L
+Paw Paw,2,2,District Semifinal,L
+Pinckney,2,1,District First Round,L
+Plainwell,2,1,District First Round,L
+Pontiac Notre Dame Prep,2,6,Quarterfinal,L
+Portland,2,1,District First Round,L
+Redford Union,2,2,District Semifinal,L
+Redford Westfield Prep,2,1,District First Round,L
+Reed City,2,1,District First Round,L
+Remus Chippewa Hills,2,2,District Semifinal,L
+Richmond,2,4,Regional Semifinal,L
+Romulus Summit Academy North,2,5,Regional Final,L
+Saginaw,2,4,Regional Semifinal,L
+Saginaw Swan Valley,2,2,District Semifinal,L
+Sault Ste Marie,2,4,Regional Semifinal,L
+Shepherd,2,2,District Semifinal,L
+South Haven,2,1,District First Round,L
+Sparta,2,4,Regional Semifinal,L
+Spring Lake,2,2,District Semifinal,L
+St Clair,2,3,District Final,L
+St Clair Shores South Lake,2,2,District Semifinal,L
+Standish-Sterling,2,4,Regional Semifinal,L
+Stockbridge,2,2,District Semifinal,L
+Tecumseh,2,1,District First Round,L
+Three Rivers,2,2,District Semifinal,L
+Trenton,2,1,District First Round,L
+Vicksburg,2,3,District Final,L
+Warren Lincoln,2,3,District Final,L
+Warren Michigan Collegiate,2,3,District Final,L
+Wayland,2,2,District Semifinal,L
+Whitehall,2,5,Regional Final,L
+Williamston,2,8,Final,W
+Wyoming Godwin Heights,2,2,District Semifinal,L
+Wyoming Kelloggsville,2,1,District First Round,L
+Wyoming Lee,2,1,District First Round,L
+Yale,2,2,District Semifinal,L
+Addison,3,2,District Semifinal,L
+Adrian Madison,3,2,District Semifinal,L
+Alcona,3,2,District Semifinal,L
+Allen Park Cabrini,3,1,District First Round,L
+Ann Arbor Greenhills,3,4,Regional Semifinal,L
+Arts & Technology Academy of Pontiac,3,1,District First Round,L
+Bad Axe,3,4,Regional Semifinal,L
+Bangor,3,1,District First Round,L
+Bark River-Harris,3,2,District Semifinal,L
+Bath,3,6,Quarterfinal,L
+Beal City,3,3,District Final,L
+Beaverton,3,1,District First Round,L
+Benzie Central,3,5,Regional Final,L
+Blanchard Montabella,3,3,District Final,L
+Blissfield,3,1,District First Round,L
+Bloomingdale,3,2,District Semifinal,L
+Bridgman,3,2,District Semifinal,L
+Brighton Charyl Stockwell Prep,3,1,District First Round,L
+Bronson,3,4,Regional Semifinal,L
+Brooklyn Columbia Central,3,3,District Final,L
+Brown City,3,2,District Semifinal,L
+Buchanan,3,3,District Final,L
+Burton Atherton,3,1,District First Round,L
+Burton Bendle,3,4,Regional Semifinal,L
+Burton Bentley,3,2,District Semifinal,L
+Burton Madison Academy,3,2,District Semifinal,L
+Byron,3,1,District First Round,L
+Calumet,3,2,District Semifinal,L
+Canton Prep,3,2,District Semifinal,L
+Capac,3,1,District First Round,L
+Caro,3,1,District First Round,L
+Carson City-Crystal,3,2,District Semifinal,L
+Cass City,3,2,District Semifinal,L
+Cassopolis,3,1,District First Round,L
+Centreville,3,3,District Final,L
+Charlevoix,3,2,District Semifinal,L
+Clinton,3,4,Regional Semifinal,L
+Clinton Township Clintondale,3,1,District First Round,L
+Concord,3,3,District Final,L
+Dansville,3,2,District Semifinal,L
+Dearborn Heights Star International,3,2,District Semifinal,L
+Dearborn Riverside Academy West,3,1,District First Round,L
+Decatur,3,2,District Semifinal,L
+Delton Kellogg,3,1,District First Round,L
+Detroit Academy of the Americas,3,2,District Semifinal,L
+Detroit Central,3,3,District Final,W
+Detroit Community,3,2,District Semifinal,L
+Detroit Cristo Rey,3,3,District Final,L
+Detroit Leadership Academy,3,3,District Final,L
+Detroit Loyola,3,5,Regional Final,L
+Detroit Voyageur College Prep,3,4,Regional Semifinal,L
+East Jackson,3,2,District Semifinal,L
+East Jordan,3,3,District Final,L
+Ecorse,3,7,Semifinal,L
+Elk Rapids,3,2,District Semifinal,L
+Elkton-Pigeon-Bay Port Laker,3,3,District Final,L
+Erie Mason,3,5,Regional Final,L
+Evart,3,2,District Semifinal,L
+Farwell,3,2,District Semifinal,L
+Fennville,3,2,District Semifinal,L
+Flint Beecher,3,7,Semifinal,L
+Galesburg-Augusta,3,2,District Semifinal,L
+Genesee,3,2,District Semifinal,L
+Gladstone,3,1,District First Round,L
+Grand Rapids Covenant Christian,3,3,District Final,L
+Grand Rapids NorthPointe Christian,3,3,District Final,L
+Grand Rapids Wellspring Prep,3,2,District Semifinal,L
+Grandville Calvin Christian,3,4,Regional Semifinal,L
+Grass Lake,3,1,District First Round,L
+Grayling,3,6,Quarterfinal,L
+Grosse Pointe Woods University Liggett,3,2,District Semifinal,W
+Gwinn,3,1,District First Round,L
+Hamtramck Oakland International Academy,3,1,District First Round,L
+Hancock,3,1,District First Round,L
+Hanover-Horton,3,2,District Semifinal,L
+Harbor Beach,3,2,District Semifinal,L
+Harbor Springs,3,4,Regional Semifinal,L
+Harrison,3,1,District First Round,L
+Hart,3,2,District Semifinal,L
+Hartford,3,3,District Final,L
+Hemlock,3,4,Regional Semifinal,L
+Hesperia,3,1,District First Round,L
+Holland Black River,3,1,District First Round,L
+Holton,3,3,District Final,L
+Homer,3,4,Regional Semifinal,L
+Hope of Detroit Academy,3,2,District Semifinal,L
+Houghton Lake,3,2,District Semifinal,L
+Hudson,3,2,District Semifinal,L
+International Academy of Flint,3,3,District Final,L
+Iron Mountain,3,3,District Final,L
+Ishpeming,3,2,District Semifinal,L
+Ishpeming Westwood,3,4,Regional Semifinal,L
+Ithaca,3,3,District Final,L
+Jackson Lumen Christi,3,1,District First Round,L
+Johannesburg-Lewiston,3,1,District First Round,L
+Kalamazoo Christian,3,3,District Final,L
+Kalamazoo Hackett Catholic Prep,3,2,District Semifinal,L
+Kent City,3,2,District Semifinal,L
+Kimball Landmark Academy,3,2,District Semifinal,L
+Kingston,3,2,District Semifinal,L
+Laingsburg,3,3,District Final,L
+Lake City,3,1,District First Round,L
+Lakeview,3,1,District First Round,L
+Lawton,3,4,Regional Semifinal,L
+LeRoy Pine River,3,2,District Semifinal,L
+Leslie,3,2,District Semifinal,L
+Madison Heights Bishop Foley,3,4,Regional Semifinal,W
+Madison Heights Madison,3,2,District Semifinal,L
+Mancelona,3,2,District Semifinal,L
+Manchester,3,1,District First Round,L
+Manistique,3,2,District Semifinal,L
+Manton,3,2,District Semifinal,L
+Maple City Glen Lake,3,1,District First Round,L
+Marlette,3,5,Regional Final,L
+Mason County Central,3,3,District Final,L
+McBain,3,4,Regional Semifinal,L
+Memphis,3,3,District Final,L
+Menominee,3,8,Final,L
+Merrill,3,1,District First Round,L
+Mesick,3,3,District Final,L
+Michigan Center,3,5,Regional Final,L
+Millington,3,3,District Final,L
+Monroe St Mary Catholic Central,3,2,District Semifinal,L
+Montrose,3,1,District First Round,L
+Morley Stanwood,3,2,District Semifinal,L
+Mount Clemens,3,2,District Semifinal,L
+Muskegon Western Michigan Christian,3,1,District First Round,L
+Napoleon,3,3,District Final,L
+New Haven,3,6,Quarterfinal,L
+New Lothrop,3,1,District First Round,L
+Niles Brandywine,3,2,District Semifinal,L
+North Muskegon,3,4,Regional Semifinal,L
+Oscoda,3,3,District Final,L
+Ottawa Lake Whiteford,3,3,District Final,L
+Painesdale Jeffers,3,3,District Final,L
+Perry,3,2,District Semifinal,L
+Pewamo-Westphalia,3,6,Quarterfinal,L
+Pinconning,3,2,District Semifinal,L
+Potterville,3,1,District First Round,L
+Quincy,3,1,District First Round,L
+Ravenna,3,5,Regional Final,L
+Reading,3,2,District Semifinal,L
+Reese,3,3,District Final,L
+Riverview Gabriel Richard,3,2,District Semifinal,L
+Rochester Hills Lutheran Northwest,3,2,District Semifinal,L
+Roscommon,3,1,District First Round,L
+Royal Oak Shrine Catholic,3,3,District Final,L
+Saginaw Valley Lutheran,3,2,District Semifinal,L
+Sand Creek,3,1,District First Round,L
+Sandusky,3,1,District First Round,L
+Sanford Meridian,3,5,Regional Final,L
+Saranac,3,1,District First Round,L
+Saugatuck,3,1,District First Round,L
+Schoolcraft,3,8,Final,W
+Shelby,3,2,District Semifinal,L
+Southfield Bradford Academy,3,1,District First Round,L
+Springport,3,1,District First Round,L
+St Charles,3,1,District First Round,L
+St Helen Charlton Heston Academy,3,2,District Semifinal,L
+St Ignace,3,2,District Semifinal,L
+St Louis,3,2,District Semifinal,L
+Tawas,3,4,Regional Semifinal,L
+Taylor Prep,3,1,District First Round,L
+Traverse City St Francis,3,3,District Final,L
+Union City,3,2,District Semifinal,L
+Unionville-Sebewaing,3,1,District First Round,L
+Vandercook Lake,3,2,District Semifinal,L
+Vassar,3,2,District Semifinal,L
+Vermontville Maple Valley,3,1,District First Round,L
+Watervliet,3,5,Regional Final,L
+West Iron County,3,1,District First Round,L
+White Cloud,3,1,District First Round,L
+White Pigeon,3,1,District First Round,L
+Whitmore Lake,3,2,District Semifinal,L
+Whittemore-Prescott,3,1,District First Round,L
+Wyoming Potter's House Christian,3,2,District Semifinal,L
+Ypsilanti Arbor Prep,3,3,District Final,L
+Adrian Lenawee Christian,4,6,Quarterfinal,L
+Akron-Fairgrove,4,1,District First Round,L
+Alanson,4,2,District Semifinal,L
+Allen Park Inter-City Baptist,4,2,District Semifinal,L
+Ann Arbor Central Academy,4,3,District Final,L
+Ann Arbor Rudolf Steiner,4,1,District First Round,L
+Ashley,4,1,District First Round,L
+Athens,4,3,District Final,L
+Atlanta,4,3,District Final,L
+Au Gres-Sims,4,2,District Semifinal,L
+Auburn Hills Christian,4,1,District First Round,L
+Auburn Hills Oakland Christian,4,3,District Final,L
+Baldwin,4,3,District Final,L
+Baraga,4,2,District Semifinal,L
+Battle Creek Calhoun Christian,4,1,District First Round,L
+Battle Creek St Philip,4,3,District Final,L
+Bay City All Saints,4,2,District Semifinal,L
+Bear Lake,4,1,District First Round,L
+Bellaire,4,2,District Semifinal,L
+Bellevue,4,5,Regional Final,L
+Benton Harbor Countryside Academy,4,1,District First Round,L
+Bessemer,4,1,District First Round,L
+Big Rapids Crossroads Academy,4,1,District First Round,L
+Bloomfield Hills Roeper,4,3,District Final,L
+Boyne Falls,4,1,District First Round,L
+Breckenridge,4,2,District Semifinal,L
+Brethren,4,3,District Final,L
+Brighton Livingston Christian,4,2,District Semifinal,L
+Brimley,4,3,District Final,L
+Brimley Ojibwe Charter,4,2,District Semifinal,L
+Britton Deerfield,4,2,District Semifinal,L
+Buckley,4,3,District Final,L
+Burr Oak,4,2,District Semifinal,L
+Burt Lake Northern Michigan Christian,4,3,District Final,L
+Burton CenterPoint Christian,4,1,District First Round,L
+Byron Center Zion Christian,4,1,District First Round,L
+Camden-Frontier,4,1,District First Round,L
+Carney-Nadeau,4,2,District Semifinal,L
+Carsonville-Port Sanilac,4,1,District First Round,L
+Caseville,4,2,District Semifinal,L
+Cedarville,4,3,District Final,L
+Central Lake,4,2,District Semifinal,L
+Chesterfield Austin Catholic,4,1,District First Round,L
+Clarkston Everest Collegiate,4,4,Regional Semifinal,L
+Climax-Scotts,4,2,District Semifinal,L
+Coleman,4,2,District Semifinal,L
+Colon,4,4,Regional Semifinal,L
+Cooks Big Bay de Noc,4,1,District First Round,L
+Covert,4,2,District Semifinal,L
+Crystal Falls Forest Park,4,1,District First Round,L
+Deckerville,4,2,District Semifinal,L
+Detroit Davis Aerospace,4,1,District First Round,L
+Detroit Douglass,4,4,Regional Semifinal,L
+Detroit Public Safety Academy,4,2,District Semifinal,L
+Dollar Bay,4,2,District Semifinal,L
+Dryden,4,2,District Semifinal,L
+Eau Claire,4,3,District Final,L
+Eben Junction Superior Central,4,2,District Semifinal,L
+Ellsworth,4,4,Regional Semifinal,L
+Engadine,4,1,District First Round,L
+Ewen-Trout Creek,4,8,Final,L
+Fairview,4,1,District First Round,L
+Felch North Dickinson,4,1,District First Round,L
+Fife Lake Forest Area,4,1,District First Round,L
+Fowler,4,2,District Semifinal,L
+Frankfort,4,4,Regional Semifinal,L
+Fruitport Calvary Christian,4,3,District Final,L
+Fulton,4,6,Quarterfinal,L
+Gaylord St Mary,4,3,District Final,L
+Genesee Christian,4,7,Semifinal,L
+Gobles,4,4,Regional Semifinal,L
+Hale,4,1,District First Round,L
+Hannahville Nah Tah Wahsh,4,1,District First Round,L
+Harbor Springs Harbor Light Christian,4,4,Regional Semifinal,L
+Hillman,4,4,Regional Semifinal,L
+Hillsdale Academy,4,4,Regional Semifinal,L
+Hillsdale Will Carleton Academy,4,2,District Semifinal,L
+Hudsonville Libertas Christian,4,2,District Semifinal,L
+Indian River Inland Lakes,4,1,District First Round,L
+Inkster American International Academy,4,2,District Semifinal,L
+Ironwood,4,2,District Semifinal,L
+Jackson Christian,4,2,District Semifinal,L
+Jackson Prep,4,1,District First Round,L
+Kalamazoo Heritage Christian,4,1,District First Round,L
+Kalamazoo Phoenix,4,2,District Semifinal,L
+Kinde North Huron,4,3,District Final,L
+L'Anse,4,3,District Final,L
+Lake Leelanau St Mary,4,7,Semifinal,L
+Lake Linden-Hubbell,4,4,Regional Semifinal,L
+Lansing Christian,4,1,District First Round,L
+Lawrence,4,3,District Final,L
+Leland,4,2,District Semifinal,L
+Litchfield,4,2,District Semifinal,L
+Lutheran Westland,4,3,District Final,L
+Mackinac Island,4,2,District Semifinal,L
+Mackinaw City,4,2,District Semifinal,L
+Manistee Catholic Central,4,2,District Semifinal,L
+Marcellus,4,1,District First Round,L
+Marcellus Howardsville Christian,4,2,District Semifinal,L
+Marine City Cardinal Mooney,4,5,Regional Final,L
+Marion,4,1,District First Round,L
+Marshall Academy,4,2,District Semifinal,L
+Martin,4,3,District Final,L
+Mason County Eastern,4,2,District Semifinal,L
+Mayville,4,2,District Semifinal,L
+McBain Northern Michigan Christian,4,5,Regional Final,L
+Melvindale Academy for Business & Tech,4,3,District Final,L
+Mendon,4,2,District Semifinal,L
+Midland Calvary Baptist,4,1,District First Round,L
+Mio,4,2,District Semifinal,L
+Morenci,4,3,District Final,L
+Morrice,4,1,District First Round,L
+Mount Pleasant Sacred Heart,4,3,District Final,L
+Munising,4,4,Regional Semifinal,L
+Muskegon Catholic Central,4,2,District Semifinal,L
+Muskegon Heights Academy,4,4,Regional Semifinal,L
+New Buffalo,4,5,Regional Final,L
+New Haven Merritt Academy,4,2,District Semifinal,L
+Newberry,4,2,District Semifinal,L
+North Adams-Jerome,4,1,District First Round,L
+Norway,4,2,District Semifinal,L
+Novi Christian Academy,4,2,District Semifinal,L
+Onaway,4,5,Regional Final,L
+Onekama,4,2,District Semifinal,L
+Ontonagon,4,1,District First Round,L
+Peck,4,3,District Final,L
+Pellston,4,2,District Semifinal,L
+Pentwater,4,2,District Semifinal,L
+Petersburg Summerfield,4,2,District Semifinal,L
+Pickford,4,4,Regional Semifinal,L
+Pittsford,4,3,District Final,L
+Plymouth Christian Academy,4,4,Regional Semifinal,L
+Pontiac Academy for Excellence,4,2,District Semifinal,L
+Portland St Patrick,4,2,District Semifinal,L
+Posen,4,3,District Final,L
+Powers North Central,4,5,Regional Final,L
+Rapid River,4,3,District Final,L
+Republic-Michigamme,4,1,District First Round,L
+Rock Mid Peninsula,4,2,District Semifinal,L
+Rogers City,4,2,District Semifinal,L
+Rudyard,4,6,Quarterfinal,L
+Saginaw Arts & Sciences Academy,4,2,District Semifinal,L
+Saginaw Michigan Lutheran Seminary,4,3,District Final,L
+Saginaw Nouvel,4,5,Regional Final,L
+Southfield Christian,4,6,Quarterfinal,L
+Southfield Manoogian,4,2,District Semifinal,L
+St Joseph Michigan Lutheran,4,1,District First Round,L
+St Joseph Our Lady of the Lake Catholic,4,2,District Semifinal,L
+Stephenson,4,3,District Final,L
+Sterling Heights Parkway Christian,4,2,District Semifinal,L
+Suttons Bay,4,1,District First Round,L
+Taylor Trillium Academy,4,5,Regional Final,L
+Tekonsha,4,1,District First Round,L
+Three Oaks River Valley,4,2,District Semifinal,L
+Traverse City Christian,4,2,District Semifinal,L
+Ubly,4,4,Regional Semifinal,L
+Vestaburg,4,4,Regional Semifinal,L
+Wakefield-Marenisco,4,3,District Final,L
+Waldron,4,1,District First Round,L
+Walkerville,4,1,District First Round,L
+Warren Michigan Math & Science,4,3,District Final,L
+Waterford Our Lady of the Lakes,4,2,District Semifinal,L
+Watersmeet,4,2,District Semifinal,L
+Webberville,4,3,District Final,L
+West Bloomfield Frankel Jewish Academy,4,2,District Semifinal,L
+Westland Huron Valley Lutheran,4,2,District Semifinal,L
+Wolverine,4,2,District Semifinal,L
+Wyoming Tri-unity Christian,4,8,Final,W
