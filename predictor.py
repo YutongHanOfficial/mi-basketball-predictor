@@ -358,9 +358,13 @@ def load_tournament(season, version=None):
     path = TOURNAMENT_FILE.format(season=season)
     if not os.path.exists(path):
         return {}
-    d = pd.read_csv(path, dtype={"result": str}).fillna({"result": ""})
-    return {r.school: {"division": int(r.division), "round": int(r.round), "round_name": r.round_name, "result": r.result}
+    d = pd.read_csv(path, dtype={"result": str, "division": str}).fillna({"result": ""})
+    return {r.school: {"division": r.division, "round": int(r.round), "round_name": r.round_name, "result": r.result}
             for r in d.itertuples()}
+
+def division_label(division):
+    """"1" -> "Division 1"; "A" -> "Class A" (basketball used Classes A-D before 2019-20)."""
+    return f"Division {division}" if str(division).isdigit() else f"Class {division}"
 
 def division_name(season, team):
     """"Division 2", or None when MHSAA has no tournament data for the season. Until the
@@ -369,7 +373,7 @@ def division_name(season, team):
     if res is None and season == CURRENT_SEASON and not load_tournament(season, version=VERSION):
         past = [s for s, _ in SEASON_FILES if s < season and load_tournament(s, version=VERSION)]
         res = load_tournament(past[-1], version=VERSION).get(team) if past else None
-    return f"Division {res['division']}" if res else None
+    return division_label(res["division"]) if res else None
 
 def division_sort_key(name):
     return (name is None, name or "")
@@ -380,14 +384,16 @@ def division_caption(season, team):
 
 def tournament_text(res, season, is_current):
     """Banner text for a school's tournament finish, e.g. "2024-25 Division 1 State Champions"."""
-    label, div = season_label(season), f"Division {res['division']}"
+    label, div = season_label(season), division_label(res["division"])
     if res["result"] == "":
         return f"In the {label} {div} tournament: next up, the {res['round_name']}"
     if res["round"] == len(ROUNDS):
         return f"{label} {div} State Champions" if res["result"] == "W" else f"{label} {div} State Runner-Up"
     if res["result"] == "W":  # won its last listed game, then the season ended (2019-20)
         return f"Won the {label} {div} {res['round_name']}"
-    return f"Lost in the {label} {div} {res['round_name']}"
+    # Seasons rebuilt from the game data only tell the District Final apart from earlier District games
+    round_name = "District round" if res["round_name"] == "District" else res["round_name"]
+    return f"Lost in the {label} {div} {round_name}"
 
 def tournament_short(res, is_current):
     """Compact version for tables, e.g. "🏆 State Champions", "Lost Regional Final"."""
@@ -872,7 +878,7 @@ else:
                         history = team_ranking_history(predictor, selected_team, version=VERSION)
                     if not history.empty:
                         st.markdown("### 🏅 Year-by-Year Rankings")
-                        st.caption("Final power ranking each season, statewide and within the school's division that year, and how far the school went in the MHSAA tournament (divisions and tournament results start in 2019-20).")
+                        st.caption("Final power ranking each season, statewide and within the school's division that year (Class A–D before 2019-20), and how far the school went in the MHSAA tournament.")
                         st.dataframe(history, width="stretch", hide_index=True)
                         st.markdown("---")
             
