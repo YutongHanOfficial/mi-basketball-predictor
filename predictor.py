@@ -215,17 +215,19 @@ class SeasonView:
         }
 
     def rating_history(self, team_name):
-        """Daily power / offense / defense / rank for one team through this season."""
-        dates = sorted({g["date_obj"] for g in self.games if g.get("home_score") is not None and g.get("date_obj")})
-        if not dates or team_name not in self.ratings.index:
+        """Daily power / offense / defense / rank for one team, from the day before its
+        first game through the end of the season."""
+        played = [g for g in self.games if g.get("home_score") is not None and g.get("date_obj")]
+        dates = sorted({g["date_obj"] for g in played})
+        team_dates = sorted({g["date_obj"] for g in played if team_name in (g["home"], g["away"])})
+        if not team_dates or team_name not in self.ratings.index:
             return []
-        start_dt, last_game_dt = dates[0], dates[-1]
+        # Start at the team's own first game: a few early games elsewhere (or a delayed
+        # season like 2020-21) shouldn't stretch a flat preseason line across the chart
+        start_dt, last_game_dt = team_dates[0], dates[-1]
         now = datetime.now()
-        end_dt = max(last_game_dt, now) if (self.is_current and now.year == last_game_dt.year) else last_game_dt
-
-        # The Wednesday strictly before the first game
-        days_to_wed = (start_dt.weekday() - 2) % 7 or 7
-        preseason_dt = start_dt - timedelta(days=days_to_wed)
+        end_dt = max(last_game_dt, now) if (self.is_current and now <= last_game_dt + timedelta(days=30)) else last_game_dt
+        preseason_dt = start_dt - timedelta(days=1)
 
         def snapshot(ratings):
             o, d = team_split(ratings)
@@ -823,17 +825,8 @@ else:
                     df_hist = pd.DataFrame(history_data)
                     df_hist["Date"] = pd.to_datetime(df_hist["Date"])
                 
-                    col_title, col_freq = st.columns([3, 1])
-                    with col_title: st.markdown("### 📈 Season Progression")
-                    with col_freq: graph_freq = st.radio("Update Frequency", ["Weekly", "Daily"], horizontal=True)
-                
-                    # Filtering for Weekly View
-                    if graph_freq == "Weekly":
-                        df_hist = df_hist.sort_values("Date")
-                    
-                        # Monday=0, Tuesday=1, Wednesday=2
-                        # This strictly filters the dataframe to only keep Wednesdays 
-                        df_hist = df_hist[df_hist['Date'].dt.weekday == 2].reset_index(drop=True)
+                    # Daily: basketball teams play two or three times a week
+                    st.markdown("### 📈 Season Progression")
 
                     col_chart1, col_chart2 = st.columns(2)
                 
