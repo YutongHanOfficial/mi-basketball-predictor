@@ -15,7 +15,7 @@ for _module in ("engine",):
     if _module in sys.modules:
         importlib.reload(sys.modules[_module])
 
-from engine import Engine, EngineConfig, discover_seasons, is_oos, week_index
+from engine import Engine, EngineConfig, discover_seasons, is_oos, load_aliases, week_index
 
 # ==========================================
 # ⚙️ ENGINE CONFIGURATION
@@ -327,7 +327,7 @@ def code_version():
     """Changes whenever the model code or data changes, so cached results are rebuilt."""
     parts = []
     files = [f for _, f in SEASON_FILES] + [TOURNAMENT_FILE.format(season=s) for s, _ in SEASON_FILES]
-    for f in ["engine.py", "predictor.py"] + files:
+    for f in ["engine.py", "predictor.py", "team_aliases.csv"] + files:
         parts.append(f"{f}:{os.path.getmtime(f) if os.path.exists(f) else 0}:{os.path.getsize(f) if os.path.exists(f) else 0}")
     return "|".join(parts)
 
@@ -361,6 +361,7 @@ def load_tournament(season, version=None):
     if not os.path.exists(path):
         return {}
     d = pd.read_csv(path, dtype={"result": str, "division": str}).fillna({"result": ""})
+    d["school"] = d["school"].replace(load_aliases())  # match the renamed schools in the game data
     return {r.school: {"division": r.division, "round": int(r.round), "round_name": r.round_name, "result": r.result}
             for r in d.itertuples()}
 
